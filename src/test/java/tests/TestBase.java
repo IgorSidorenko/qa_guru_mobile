@@ -26,8 +26,8 @@ public class TestBase {
         switch (host) {
             case "local":
                 Configuration.browser = LocalMobileDriver.class.getName();
-            /*case "browserstack":
-                Configuration.browser = BrowserstackMobileDriver.class.getName();*/
+            case "browserstack":
+                Configuration.browser = BrowserstackMobileDriver.class.getName();
         }
         Configuration.browserSize = null;
     }
