@@ -52,13 +52,12 @@
 ## Сборка в Jenkins
 Для удалённого запуска можно настроить запуск в Jenkins. Пример прогона:
 
-<img src="/images/reports/jenkins_report.png">
+<img src="images/screenshots/jenkins_report.png">
 
 ## Allure отчет
 Результат прогона тестов можно посмотреть в отчёте. Информация в тесте представлена в виде шагов с действиями.
 
-<img src="/images/reports/allure_main.png">
-<img src="/images/reports/test_example.png">
+<img src="images/screenshots/test_example.png">
 
 ## Отчет Browserstack
 За прогоном тестов можно наблюдать в интерфейсе Browserstack.
