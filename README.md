@@ -1,8 +1,6 @@
 # Проект автоматизации мобильного приложения Wikipedia
 
-Проект выполнен в рамках курса по автоматизации школы <a href="https://qa.guru">QA.Guru</a>.
-
-<img src="/images/Wikipedia.jpg">
+<img src="images/screenshots/Wikipedia.jpg">
 
 ## Содержание:
 
@@ -16,20 +14,20 @@
 * <a href="#link-видео-прохождения-тестов">Видео прохождения тестов</a>
 
 
-## :link: Технологии и инструменты
+## Технологии и инструменты
 В проекте используются:
 
 <p align="center">
-<img width="6%" src="/images/icons/Java.svg">
-<img width="6%" src="/images/icons/Intelij_IDEA.svg">
-<img width="6%" src="/images/icons/Gradle.svg">
-<img width="6%" src="/images/icons/JUnit5.svg">
-<img width="6%" src="/images/icons/Jenkins.svg">
-<img width="6%" src="/images/icons/Selenide.svg">
-<img width="6%" src="/images/icons/Selenoid.svg">
-<img width="6%" src="/images/icons/GitHub.svg">
-<img width="6%" src="/images/icons/Allure_Report.svg">
-<img width="6%" src="/images/icons/Telegram.svg">
+<img width="6%" src="images/logo/Java.svg">
+<img width="6%" src="images/logo/Intelij_IDEA.svg">
+<img width="6%" src="images/logo/Gradle.svg">
+<img width="6%" src="images/logo/JUnit5.svg">
+<img width="6%" src="images/logo/Jenkins.svg">
+<img width="6%" src="images/logo/Selenide.svg">
+<img width="6%" src="images/logo/Selenoid.svg">
+<img width="6%" src="images/logo/GitHub.svg">
+<img width="6%" src="images/logo/Allure_Report.svg">
+<img width="6%" src="images/logo/Telegram.svg">
 </p>
 
 Тесты написаны на Java с использованием фреймворков Selenide, JUnit 5 и Allure. Для сборки проекта используется Gradle.
@@ -65,18 +63,18 @@
 ## Отчет Browserstack
 За прогоном тестов можно наблюдать в интерфейсе Browserstack.
 
-<img src="/images/reports/browserstack.png">
+<img src="images/screenshots/browserstack.png">
 
 ## Отчет в Telegram
 Результат прохождения тестов отправляется в Telegram с помощью бота. Пример сообщения с отчётом:
 
 <p align="center">
-<img src="/images/reports/telegram_report.png">
+<img src="images/screenshots/telegram_report.png">
 </p>
 
 ## Видео пример прохождения теста
 Для каждого теста есть видео с прохождением. Ниже один из примеров:
 
 <p align="center">
-<img src="/images/video.gif">
+<img src="images/gif/bbf5a47f161a9f03eead5ef5fef16323ae502642.gif">
 </p>
