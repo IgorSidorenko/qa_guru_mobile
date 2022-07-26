@@ -3,6 +3,9 @@ package tests;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import io.appium.java_client.AppiumBy;
+import io.qameta.allure.AllureId;
+import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -12,11 +15,13 @@ import static io.qameta.allure.Allure.step;
 @Tag("android")
 public class WikiTests extends TestBase {
     @Test
+    @AllureId("11592")
+    @DisplayName("name()")
     void QASearchTest() {
         back();
         step("Type search", () -> {
             $(AppiumBy.accessibilityId("Search Wikipedia")).click();
-            $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Appium");
+            $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("QA");
         });
         step("Verify content found", () ->
                 $$(AppiumBy.className("android.widget.TextView"))
@@ -24,6 +29,10 @@ public class WikiTests extends TestBase {
     }
 
     @Test
+    @AllureId("11593")
+    @DisplayName("Successful authorization to some demowebshop (UI)")
+    @Tag("demowebshop")
+    @Story("Login tests")
     void openFourPagesAndCheck() {
         step("Check first page", () ->
                 $(AppiumBy.id("org.wikipedia.alpha:id/primaryTextView"))
