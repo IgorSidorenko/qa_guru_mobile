@@ -1,4 +1,4 @@
-/*package tests;
+package tests;
 
 import io.appium.java_client.AppiumBy;
 import io.qameta.allure.AllureId;
@@ -39,5 +39,5 @@ public class CheckScreenTests extends TestBase {
             $(AppiumBy.id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("Send anonymous data"));
         });
     }
-}*/
+}
 

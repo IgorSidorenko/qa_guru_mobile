@@ -1,4 +1,4 @@
-/*package tests;
+package tests;
 
 import io.appium.java_client.AppiumBy;
 import io.qameta.allure.AllureId;
@@ -46,4 +46,4 @@ public class OpenPageTests extends TestBase {
                         .shouldHave(text("Send anonymous data")));
 
     }
-}*/
+}
