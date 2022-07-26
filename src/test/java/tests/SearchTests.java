@@ -18,7 +18,7 @@ public class SearchTests extends TestBase {
         back();
         step("Type search", () -> {
             $(AppiumBy.accessibilityId("Search Wikipedia")).click();
-            $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("QA");
+            $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Quality Assurance");
         });
         step("Verify content found", () ->
                 $$(AppiumBy.className("android.widget.TextView"))
