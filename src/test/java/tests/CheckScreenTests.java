@@ -12,10 +12,11 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-@Tag("android")
+
 public class CheckScreenTests extends TestBase {
 
     @Test
+    @Tag("android")
     @AllureId("11594")
     @DisplayName("Successful authorization to some demowebshop (API + UI)")
     @Tag("demowebshop")

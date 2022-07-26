@@ -9,10 +9,11 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
+
 public class SearchTests extends TestBase {
     @Test
     @AllureId("11592")
-    @DisplayName("name()")
+    @DisplayName("name")
     void QASearchTest() {
         back();
         step("Type search", () -> {

@@ -11,8 +11,10 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
+
 public class OpenPageTests extends TestBase {
     @Test
+    @Tag("android")
     @AllureId("11593")
     @DisplayName("Check page")
     @Tag("demowebshop")
