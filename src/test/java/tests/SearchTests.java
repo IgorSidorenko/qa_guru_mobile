@@ -15,7 +15,7 @@ public class SearchTests extends TestBase {
     @AllureId("11592")
     @DisplayName("name")
     void QASearchTest() {
-        back();
+        //back();
         step("Type search", () -> {
             $(AppiumBy.accessibilityId("Search Wikipedia")).click();
             $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Quality Assurance");
