@@ -1,6 +1,6 @@
-# Проект автоматизации мобильного приложения Wikipedia
+# Проект автоматизации мобильного приложения https://wikipedia.org
 
-<img src="images/screenshots/Wikipedia.jpg">
+<img src="images/screenshots/Wikipedia.jpeg">
 
 ## Содержание:
 
