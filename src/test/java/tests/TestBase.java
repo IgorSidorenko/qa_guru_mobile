@@ -23,11 +23,10 @@ public class TestBase {
 
     @BeforeAll
     public static void setup() {
-        switch (host) {
-            case "local":
-                Configuration.browser = LocalMobileDriver.class.getName();
-            case "browserstack":
-                Configuration.browser = BrowserstackMobileDriver.class.getName();
+        if (host.equals("local")) {
+            Configuration.browser = LocalMobileDriver.class.getName();
+        } else {
+            Configuration.browser = BrowserstackMobileDriver.class.getName();
         }
         Configuration.browserSize = null;
     }
@@ -45,9 +44,11 @@ public class TestBase {
 
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
+
+        step("Close driver", Selenide::closeWebDriver);
+
         if (Objects.equals(host, "browserstack")) {
-            step("Close driver", Selenide::closeWebDriver);
+            Attach.video(sessionId);
         }
-        Attach.video(sessionId);
     }
 }
