@@ -42,7 +42,7 @@
 Реализована возможность как локального, так и удалённого запуска.
 
 Запуск выполняется командой:
-`gradle clean test -Dhost={HOST}`, где вместо {HOST} передаётся тип запуска – 
+`./gradlew clean test -Dhost={HOST}`, где вместо {HOST} передаётся тип запуска – 
 локальный (задаётся значение local) или через Browserstack (задаётся значение browserstack).
 
 В отдельный config-file вынесены настройки для запуска: логин и пароль пользователя, 
@@ -59,6 +59,10 @@
 Результат прогона тестов можно посмотреть в отчёте. Информация в тесте представлена в виде шагов с действиями.
 
 <img src="images/screenshots/test_example.png">
+
+## Интеграция Allure Test-Ops
+<img src="images/screenshots/allureto.png">
+<img src="images/screenshots/allureto2.png">
 
 ## Отчет Browserstack
 За прогоном тестов можно наблюдать в интерфейсе Browserstack.

@@ -39,7 +39,7 @@ public class WikiTests extends TestBase {
     @AllureId("11775")
     @Tag("Other")
     @DisplayName("Check opening screen onboarding pages")
-    void openingScreenTest() {
+    void openinusergScreenTest() {
         step("Check first page", () -> {
             $(AppiumBy.id("org.wikipedia.alpha:id/primaryTextView")).
                     shouldHave(text("The Free Encyclopedia\n" +
