@@ -53,8 +53,6 @@ public class LocalMobileDriver implements WebDriverProvider {
         } catch (MalformedURLException exception) {
             throw new RuntimeException(exception);
         }
-
-
     }
 
     private File getApp() {
